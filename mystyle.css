@@ -1,3 +1,31 @@
 body {
-background-color: #add8e6;
+	background-color: #add8e6;
+}
+/* grid for desktop*/
+.grid-container {
+  display: grid;
+  grid-template-columns: 10% 50% 30% 10%;
+	grid-gap: 10px;
+	Padding: 10px;
+}
+.myskills {
+	grid-column: 2 / 3;
+}
+.aboutme {
+	grid-column: 3 / 4;
+}
+/* For mobiles and tablets */
+@media screen and (min-width: 480px) {
+    .grid-container {
+  display: grid;
+  grid-template-rows: auto auto;
+	grid-gap: 10px;
+	Padding: 10px;
+}
+.myskills {
+	grid-column: 0 / 1;
+}
+.aboutme {
+	grid-column: 1 / 2;
+}
 }
