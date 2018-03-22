@@ -15,7 +15,7 @@ body {
 	grid-column: 3 / 4;
 }
 /* For mobiles and tablets */
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
     .grid-container {
   display: grid;
   grid-template-rows: auto auto;
@@ -23,9 +23,9 @@ body {
 	Padding: 10px;
 }
 .myskills {
-	grid-column: 0 / 1;
+	grid-row: 0 / 1;
 }
 .aboutme {
-	grid-column: 1 / 2;
+	grid-row: 1 / 2;
 }
 }
