@@ -4,7 +4,7 @@ body {
 /* grid for desktop*/
 .grid-container {
   display: grid;
-  grid-template-columns: auto 400px 350px auto;
+  grid-template-columns: auto 40% 35% auto;
 	grid-gap: 10px;
 	Padding: 10px;
 }
