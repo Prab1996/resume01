@@ -1,21 +1,14 @@
 body {
 	background-color: #add8e6;
 }
-/* grid for desktop*/
-.grid-container {
-  display: grid;
-  grid-template-columns: 15% 30% 40% 15%;
-	grid-gap: 10px;
-	Padding: 10px;
+/* If css grids is not supported in browser */
+@supports not (display: grid) {
+	.aboutme,
+  .myskills,
 }
-.myskills {
-	grid-column: 2 / 3;
-}
-.aboutme {
-	grid-column: 3 / 4;
-}
-/* For mobiles and tablets */
-@media screen and (max-width: 480px) {
+@supports (display: grid) {
+	/* For mobiles and tablets */
+@media screen and (min-width: 10px) {
     .grid-container {
   display: grid;
   grid-template-rows: auto auto;
@@ -27,6 +20,22 @@ body {
 	}
 	.aboutme {
 	grid-row: 1 / 3;
+	}
+}
+	/* grid for desktop*/
+	@media screen and (min-width: 800px) {
+	.grid-container {
+  display: grid;
+  grid-template-columns: 15% 30% 40% 15%;
+	grid-gap: 10px;
+	Padding: 10px;
+	}
+	.myskills {
+	grid-column: 2 / 3;
+	}
+	.aboutme {
+	grid-column: 3 / 4;
+	}
 	}
 }
 .grid-container > div {
