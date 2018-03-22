@@ -30,7 +30,8 @@ body {
 	}
 }
 .grid-container > div {
-	background-color: red;
-	border-radious: 5px
+	background-color: #0191C8;
+	border-radius: 5px;
+	Padding: 10px;
 }
 	
