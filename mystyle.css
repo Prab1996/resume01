@@ -4,7 +4,7 @@ body {
 /* grid for desktop*/
 .grid-container {
   display: grid;
-  grid-template-columns: auto 40% 35% auto;
+  grid-template-columns: 15% 30% 40% 15%;
 	grid-gap: 10px;
 	Padding: 10px;
 }
@@ -21,11 +21,16 @@ body {
   grid-template-rows: auto auto;
 	grid-gap: 10px;
 	Padding: 10px;
-}
-.myskills {
+	}
+	.myskills {
 	grid-row: 0 / 2;
-}
-.aboutme {
+	}
+	.aboutme {
 	grid-row: 1 / 3;
+	}
 }
+.grid-container > div {
+	background-color: red;
+	border-radious: 5px
 }
+	
